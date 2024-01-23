@@ -1,3 +1,4 @@
+import { Link } from "@reach/router";
 import React from "react";
 import Button from "../Button/Button";
 import classes from "./Layout.module.css";
@@ -7,14 +8,32 @@ const Layout = ({ children }) => {
     <div className={classes.app}>
       <nav>
         <div className={classes.brand}>
-          <h1>Ollyo</h1>
+          <Link to="/" className={classes.navLink}>
+            <h1>Ollyo</h1>
+          </Link>
         </div>
         <div className={classes.menu}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blogs</li>
-            <li>Help</li>
+            <li>
+              <Link to="/" className={classes.navLink}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className={classes.navLink}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/blogs" className={classes.navLink}>
+                Blogs
+              </Link>
+            </li>
+            <li>
+              <Link to="/help" className={classes.navLink}>
+                Help
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={classes.nav__right}>

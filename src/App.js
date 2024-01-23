@@ -1,11 +1,17 @@
-import Layout from "./components/Layouts/Layout";
+import { Router } from "@reach/router";
+import About from "./components/pages/About";
+import Blogs from "./components/pages/Blogs";
+import Help from "./components/pages/Help";
 import Home from "./components/pages/Home";
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <Router>
+      <Home path="/" />
+      <About path="/about" />
+      <Blogs path="/blogs" />
+      <Help path="/help" />
+    </Router>
   );
 }
 

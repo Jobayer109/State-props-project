@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../Button/Button";
+import Layout from "../Layouts/Layout";
 
 const Home = () => {
   return (
-    <div>
+    <Layout>
       <h1>Hello world</h1>
       <p style={{ textAlign: "justify" }}>
         As a fresh web developer, I'm embarking on an exciting journey to
@@ -16,7 +17,7 @@ const Home = () => {
       </p>
 
       <Button text="Explore more" type="button" />
-    </div>
+    </Layout>
   );
 };
 

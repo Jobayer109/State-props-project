@@ -21,8 +21,12 @@ main {
 
 .menu ul > li {
   margin-right: 1rem;
-  text-decoration: none;
   list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .container {
