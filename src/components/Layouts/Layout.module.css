@@ -1,9 +1,10 @@
 .app {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* position: relative; */
+  position: relative;
 }
 
 nav {
+  height: 8vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +13,7 @@ nav {
   padding: 0 2rem;
 }
 main {
-  height: 80vh;
+  height: calc(100% - 80vw);
 }
 
 .menu ul {
@@ -20,7 +21,8 @@ main {
 }
 
 .menu ul > li {
-  margin-right: 1rem;
+  margin-right: 2vw;
+  font-size: 1.25vw;
   list-style: none;
 }
 
